@@ -42,7 +42,7 @@ public class Exercise34_05 extends Application{
 		
 		Scene scene = new Scene(borderPane, 600, 300);
 		
-		primaryStage.setTitle("Exercise34_05");
+		primaryStage.setTitle("Exercise34_06");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
