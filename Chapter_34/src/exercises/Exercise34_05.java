@@ -42,7 +42,7 @@ public class Exercise34_05 extends Application{
 		
 		Scene scene = new Scene(borderPane, 600, 300);
 		
-		primaryStage.setTitle("Exercise34_06");
+		primaryStage.setTitle("Exercise34_05");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
@@ -66,6 +66,9 @@ public class Exercise34_05 extends Application{
 			
 			DatabaseMetaData metaData = connect.getMetaData();
 			ResultSet rsTable = metaData.getTables(databaseName, null, tableName, null);
+
+			taResult.clear();
+			lblStatus.setText("");
 			
 			if(rsTable.next()) {//if table exists in the database retrieve data from that table
 				Statement stmt = connect.createStatement();
