@@ -20,8 +20,6 @@ public class Exercise34_04 extends Application{
 	@Override
 	public void start(Stage primaryStage) {
 		
-		initializeDB();
-		
 		lblStatus.setFont(Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC,18));
 		btnShow.setOnAction(e -> {showGrade();});
 		
